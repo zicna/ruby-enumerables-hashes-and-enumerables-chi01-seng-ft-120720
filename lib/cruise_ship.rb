@@ -8,8 +8,10 @@
 
 def select_winner(passengers)
   # add the code snippet here!
-  passengers.each |key, value|
-    if (key == "Suite A" && value[0] == "A")
-      puts key, value
+  winner = ""
+  passengers.each |suite, name|
+    if (suite == ":suite_a" && name.strat_with?("A") == "A")
+      winner = name
   end
+  puts winner
 end
