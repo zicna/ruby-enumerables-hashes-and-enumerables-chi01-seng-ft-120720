@@ -10,7 +10,7 @@ def select_winner(passengers)
   # add the code snippet here!
   winner = ""
   passengers.each |suite, name|
-    if (suite == ":suite_a" && name.strat_with?("A") == "A")
+    if (suite == ":suite_a" && name.strat_with?("A"))
       winner = name
   end
   puts winner
